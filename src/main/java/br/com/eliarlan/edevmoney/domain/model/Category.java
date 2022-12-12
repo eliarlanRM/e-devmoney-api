@@ -2,6 +2,7 @@ package br.com.eliarlan.edevmoney.domain.model;
 
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,6 +19,7 @@ public class Category {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@Column(nullable = false, length = 50, unique = true)
 	@NotNull
 	@Size(min = 3, max = 50)
 	private String name;
