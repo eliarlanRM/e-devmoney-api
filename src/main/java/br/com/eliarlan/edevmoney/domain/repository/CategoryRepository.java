@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import br.com.eliarlan.edevmoney.domain.model.Category;
 
 @Repository
-public interface CategoryRepository extends JpaRepository<Long, Category>{
+public interface CategoryRepository extends JpaRepository<Category, Long>{
 
 }
